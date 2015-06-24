@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{content-for 'head'}}
-  
+
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/sound-cloud83.css">
@@ -20,6 +20,12 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/sound-cloud83.js"></script>
+    <script src="//connect.soundcloud.com/sdk-2.0.0.js"></script>
+      <script>
+        SC.initialize({
+          client_id: "aae8bae216d99f36be9fe2f7d4ac55fa",
+        });
+      </script>
 
     {{content-for 'body-footer'}}
   </body>
