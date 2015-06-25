@@ -21,37 +21,47 @@ ul{
   list-style-type: none;
 }
 
-.container{
+.x-container{
   @include outer-container(980px);
   height: 300px;
   overflow: auto;
   margin: auto;
-  top: 0; left: 0; bottom: 0; right: 0;
+/* top: 0; left: 0; bottom: 0; right: 0; */
 }
 
-.playerControl{
+.player-control{
  @include span-columns (4);
  height: 200px;
+ text-align: center;
 }
 
-.playbackContainer{
+.player-control i{
+  font-size: 5em;
+  line-height: 200px;
+  margin:auto;
+}
+
+.playback-container{
   @include span-columns (8);
   height: 100px;
 }
 
-.timeScrubber{
+.time-scrubber{
   @include span-columns (8);
   height: 100px;
 
 }
 
-.infoBuyFooter{
+.info-buy-footer{
   height: 100px;
   @include span-columns (12);
-
 }
 
-.infoBuyFooter li{
+.info-buy-footer{
+  font-size: 1.5em;
+}
+
+.info-buy-footer li{
   @include span-columns (3);
   display: inline-block;
   text-align: center;

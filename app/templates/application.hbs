@@ -1,28 +1,28 @@
-<div class='container'>
-  <div class='playerControl'>
+<div class='x-container'>
+  <div class='player-control'>
         <i class="fa fa-play-circle-o"></i>
         <i class="fa fa-pause"></i>
   </div>
-  <div class='playbackContainer'>
-      <div class='volume'>
+  <div class='playback-container'>
+      <div class='volume-control'>
         <i class="fa fa-volume-up"></i>
     		<i class="fa fa-caret-down"></i>
     		<i class="fa fa-caret-up"></i>
       </div>
-      <div class='songArtistInfo'>
-        <h4 class="artistInfo"></h4>
-        <p class="songInfo"></p>
+      <div class='song-artist-info'>
+        <h4 class="artist-info">{{song.user.username}}</h4>
+        <p class="song-info">{{song.title}}</p>
       </div>
   </div>
-  <div class='timeScrubber'>
+  <div class='time-scrubber'>
       <i class="fa fa-spinner fa pulse"></i>
-      <hr class="songStatus">
+      <hr class="song-status">
       <span>0:00</span>
   </div>
-  <ul class='infoBuyFooter'>
+  <ul class='info-buy-footer'>
 
     <li><i class="fa fa-soundcloud"></i></li>
-    <li><p class="buySong">BUY</p></li>
+    <li><p class="buy-song">BUY</p></li>
     <li><i class="fa fa-play-circle-o"></i></li>
     <li><i class="fa fa-heart-o"></i></li>
 

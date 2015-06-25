@@ -3,8 +3,10 @@ import Ember from 'ember';
 export default Ember.Component.extend({
 
   init: function(){
-    SC.get('/tracks/', {limit: 20}, function(song) {
+    this._super();
+    SC.get('/tracks/', {limit: 1}, function(song) {
 			this.set('song', song);
+      this.set('id', song.id);
 			console.log(song);
 		}.bind(this));
   }
