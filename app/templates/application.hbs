@@ -1,8 +1,32 @@
 <div class='container'>
-  <div class='playerControl'></div>
-  <div class='artistSongInfo'></div>
-  <div class='timeScrubber'></div>
-  <div class='infoBuyFooter'></div>
+  <div class='playerControl'>
+        <i class="fa fa-play-circle-o"></i>
+        <i class="fa fa-pause"></i>
+  </div>
+  <div class='playbackContainer'>
+      <div class='volume'>
+        <i class="fa fa-volume-up"></i>
+    		<i class="fa fa-caret-down"></i>
+    		<i class="fa fa-caret-up"></i>
+      </div>
+      <div class='songArtistInfo'>
+        <h4 class="artistInfo"></h4>
+        <p class="songInfo"></p>
+      </div>
+  </div>
+  <div class='timeScrubber'>
+      <i class="fa fa-spinner fa pulse"></i>
+      <hr class="songStatus">
+      <span>0:00</span>
+  </div>
+  <ul class='infoBuyFooter'>
+
+    <li><i class="fa fa-soundcloud"></i></li>
+    <li><p class="buySong">BUY</p></li>
+    <li><i class="fa fa-play-circle-o"></i></li>
+    <li><i class="fa fa-heart-o"></i></li>
+
+  </ul>
 </div>
 
 {{outlet}}
