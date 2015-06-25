@@ -2,8 +2,8 @@
 <div class='x-container'>
   <div class='player-control'>
         <img class="artist-image" src="{{song.artwork_url}}" alt="">
-        <i class="fa fa-play-circle-o"></i>
-        <i class="fa fa-pause"></i>
+        <i class="fa fa-play-circle-o" {{action "playSong" media-player}}></i>
+        <i class="fa fa-pause"{{action "pauseSong" media-player}}></i>
   </div>
   <div class='playback-container'>
       <div class='volume-control'>
@@ -16,11 +16,12 @@
         <p class="song-info">{{song.title}}</p>
       </div>
   </div>
-  <div class='time-scrubber'>
-      <i class="fa fa-spinner fa pulse"></i>
+  <ul class='time-scrubber'>
+      <li class= "curent-time">{{current_time}}<i class="fa fa-spinner fa pulse"></i></li>
       <hr class="song-status">
-      <span>0:00</span>
-  </div>
+      <li class= "time-left">{{time_left}}
+      </li>
+  </ul>
   <ul class='info-buy-footer'>
 
     <li><i class="fa fa-soundcloud"></i></li>
