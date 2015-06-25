@@ -17,6 +17,10 @@ export default Ember.Component.extend({
         this.sound = sound;
           this.sound.play();
       }.bind(this));
+    },
+
+    pauseSong: function(){
+      this.get('sound').pause();
     }
   }
 
