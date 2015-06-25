@@ -21,12 +21,17 @@ ul{
   list-style-type: none;
 }
 
+.artist-image{
+  width: 100px;
+  height: 100px;
+}
+
 .x-container{
   @include outer-container(980px);
   height: 300px;
   overflow: auto;
   margin: auto;
-/* top: 0; left: 0; bottom: 0; right: 0; */
+ top: 0; left: 0; bottom: 0; right: 0;
 }
 
 .player-control{

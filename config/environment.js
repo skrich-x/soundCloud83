@@ -3,8 +3,8 @@
 module.exports = function(environment) {
   var ENV = {
     contentSecurityPolicy: {
-      'default-src': "'none'",
-      'script-src': "'self' connect.soundcloud.com",
+      'default-src': "'self'",
+      'script-src': "'self' 'unsafe-inline' connect.soundcloud.com",
       'font-src': "'self'",
       'connect-src': "'self'",
       'img-src': "'self'",
